@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome for icons -->
+    <script src="https://kit.fontawesome.com/54e5cda47c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo1.png" class="logo"> -->
+                <h2 class="logo">Chirag</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Chirag Kalra</span><br>From India</h1>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="header-img">
+                    <img src="images/myimg.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- ------------------header section closing --------------->
+
+    <!-- ----------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myimg1.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a logical and organized individual with a strong foundation in data structure and algorithms. Proficient in  Java ReactJS, NodeJS,  HTML, CSS, and Javascript.Excellent teamwork, interpersonal, and communication skills.
+                        Looking to start a career as an entry-level professional to enhance and explore my technical knowledge with a reputed IT company.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML CSS Javascript ReactJs MaterialUI Bootstrap NodeJs ExpressJs</li>
+                                <li><span>Java Development</span><br>System-Softwares JDBC SpringBoot Servlet JSP OOPs Multithreading</li>
+                                <li><span>Data Structure & algorithms</span><br>Array String Recursion LinkedList Trees Graphs</li>
+                                <li><span>Database</span><br>MySQL MongoDB </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Dec-2023 to Jan-2024</span><br>Web Developer Intern @ SkyBug Technology</li>
+                                <li><span>Jan-2024</span><br>Web Developer Intern @ Spark Foundation</li>
+                                <li><span>2020-2022</span><br>Share Market Analyst</li>
+                                <li><span>2019-2020</span><br>Acting/Working in Entertainment Industry</li>
+                                <li><span>2017-2019</span><br>Manager at Event Company</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-2022</span><br>BTECH from IPU delhi <BR>CGPA 8.85</BR></li>
+                                <li><span>2023</span><br>Java Fullstack/Mern stack Training at Ducat Institute</li>
+                                <li><span>2018-2019</span><br>Acting course from Moonlight Films</li>
+                                <li><span>2017-2018</span><br>12th standard <BR>CGPA 7.7</BR></li>
+                                <li><span>2015-2016</span><br>10th standard <br>CGPA 8.6</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Core & Advance Java & DSA</h2>
+                    <p>Knowledge of Multithreading,Exception Handling,JDBC,Swing framework,Concept of OOPs,
+                        Inner Classes,IO stream,Collection Framework, Servlet ,JSP, SpringMVC, SpringBoot,Hibernate
+                     </p>
+                    <!-- <a href="#">Click Here</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Knowledge of HTML, CSS, Javascript, React Js, Bootstrap, Material UI</p>
+                    <!-- <a href="#">Click Here</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>MERN stack & Databases</h2>
+                    <p>MERN :- MongoDb, ExpressJs, ReactJs, NodeJs </p>
+                    <p>Databases :- MySQL, MongoDB </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- -------------------------services end---------------------- -->
+
+    <!-------------------- portfolio/work section start------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <!-- 1 WhatsApp clone-->
+                <div class="work active-pj">
+                    <img src="images/web.png" >
+                    <div class="layer">
+                        <h3>WhatsApp clone</h3>
+                        <p>
+                            "Experience the convenience of seamless communication with our WhatsApp Clone app. Connect with friends and family through instant messaging, calls, and multimedia sharing. Enjoy a familiar interface with added features. Download now for a secure and efficient way to stay connected."</p>
+                        <a href="https://github.com/ChiragKalra640/MyWhatsApp_Server" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 2 Ecommerce Website-->
+                <div class="work active-pj">
+                    <img src="images/ecom.png" >
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>
+                            "Shop seamlessly in the ultimate online marketplace. Our E-commerce website offers a curated selection of products, secure transactions, and a user-friendly experience. Explore, click, and shop with confidence. Elevate your online shopping – visit us now!"
+                        </p>
+                        <a href="https://github.com/ChiragKalra640/EcomFrontReact" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 3 Flappy Bird Game-->
+                <div class="work active-pj">
+                    <img src="images/flappy.png" >
+                    <div class="layer">
+                        <h3>Flappy Bird Game</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                                                        
+                                "Take flight and test your reflexes in the addictive world of Flappy Bird! Navigate through challenging pipes, tap to keep your bird airborne, and aim for the highest score. Simple controls, endless fun – download now and flap your way to victory!"</p>
+                        <a  href="https://chiragkalra640.github.io/FlappyBirdGame/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 4 Music Player-->
+                <div class="work active-pj">
+                    <img src="images/music.png" >
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Elevate your auditory experience with our Music Player app. Seamlessly organize, play, and groove to your favorite tunes. Intuitive controls, sleek design – immerse yourself in the sound. Download now for a harmonious journey through your music library."
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/MusicPlayer/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 5 Image Search-->
+                <div class="work">
+                    <img src="images/image.png" >
+                    <div class="layer">
+                        <h3>Image Search</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Discover the world visually with our Image Search website. Unleash the power of images to find what words can't express. Explore a vast database, uncover inspiration, and find the perfect visuals effortlessly. Dive into a new way of searching – try it now!"
+                            
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/ImageSearch/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 6 textToSpeech-->
+                <div class="work">
+                    <img src="images/text.png" >
+                    <div class="layer">
+                        <h3>Text To Speech</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Transform text into spoken words with our Text-to-Speech app. Elevate your reading experience, listen on the go, and engage with content hands-free. Download now for a seamless blend of convenience and accessibility."
+                             <br>
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/textToSpeech/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 7 calulator-->
+                <div class="work">
+                    <img src="images/calculator.png" >
+                    <div class="layer">
+                        <h3>CALCULATOR</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Effortlessly solve equations and crunch numbers with our user-friendly calculator. Whether it's basic arithmetic or complex calculations, our sleek design and intuitive interface make math a breeze. Download now and make every calculation a simple task."
+                            <br>
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/calulatorSB/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 8 landing Page-->
+                <div class="work">
+                    <img src="images/landing.png" >
+                    <div class="layer">
+                        <h3>Landing Page website</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            
+                            "Step into style and performance with Nike. Explore the latest innovations in athletic footwear, apparel, and accessories on our sleek and dynamic website. From running to training, find the perfect gear to elevate your game. Unleash your potential – shop now at Nike for the ultimate fusion of fashion and function."
+                            
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/landingPageSB/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 9 SnakeGame-->
+                <div class="work">
+                    <img src="images/snake.png" >
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Slither and grow in the timeless classic Snake game! Maneuver through the grid, devouring pixels to lengthen your serpentine self. Test your reflexes and challenge friends for the highest score. Simple, addictive, and endlessly entertaining. Download now and relive the nostalgia of this iconic game!"
+                            
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/SnakeGame/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 10 CandyCrush-->
+                <div class="work">
+                    <img src="images/candy.png" >
+                    <div class="layer">
+                        <h3>Candy Crush</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            "Indulge your sweet tooth in the addictive world of Candy Crush! Swipe, match, and crush colorful candies to conquer hundreds of deliciously challenging levels. Satisfy your cravings for fun with this tasty puzzle adventure. Sweet victories await – download now and start the sugar-coated journey!"
+                        </p>
+                        <a  href="https://chiragkalra640.github.io/CandyCrush/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 11 SpaceInvaderGame-->
+                <div class="work">
+                    <img src="images/space.png" >
+                    <div class="layer">
+                        <h3>SpaceInvaderGame</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                                "Defend Earth from relentless alien invaders in this classic space shooter! Blast through waves of enemies, dodge incoming fire, and challenge your reflexes in a nostalgic battle for survival. Download now and become the ultimate space defender!"
+                            
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/SpaceInvaderGame/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- 12 weather app-->
+                <div class="work">
+                    <img src="images/weatherapp.png" >
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <h5>Tech Stack Used : HTML & CSS , Javascript</h5>
+                        <p>
+                            •"Stay ahead of the elements with our intuitive weather app. Get real-time updates, accurate forecasts, and personalized weather insights at your fingertips. Plan your day with confidence, no matter what Mother Nature has in store. Download now for a seamless weather experience!" <br>
+                            
+                            </p>
+                        <a  href="https://chiragkalra640.github.io/weatherApp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn load-more">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------contact section------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p ><i class="fa-solid fa-paper-plane"></i> chiragkalra640@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8076376475</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/bca_mca_projects?igsh=MWcxdTZrcHluajZyYw=="><i class="fa-brands fa-square-instagram"></i></a>
+
+                        <a href="https://www.linkedin.com/in/chirag-kalra-8100581a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------contact section end -------------------- -->
+
+        <!-- ----------copyright ------------------ -->
+
+        <div class="copyright">
+            <p>Copyright © Chirag Kalra <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <!----------------- contact section----------------------- -->
+
+    <script src="script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKmPwKl5O5WW_U6LS2jlS1Zqo4YZHXy0aG0lWV7uRaS6cx2qc6l43014sGpJanMfx0zg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succussfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+        
+</body>
+</html>
